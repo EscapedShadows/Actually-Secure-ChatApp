@@ -1,6 +1,6 @@
 import time
 import requests
-from AESCipher import AESCipher
+from client.AESCipher import AESCipher
 
 Cipher = AESCipher("7ace600265104e1c1054cb25d0aee8d02678741e7bf2b4701df61f1d32a716863bffd67c5c4e978e0df898ec2820e20226cbb888bbb98d317a206ecf6f15ccb6")
 

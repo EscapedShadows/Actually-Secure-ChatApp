@@ -24,4 +24,6 @@ def generate_1024bit_key(user_input):
 user_input = get_user_input()
 
 key = generate_1024bit_key(user_input)
-print(f"Your 1024-bit key: {key}")
+with open("secret.key", 'w') as f:
+    f.write(key)
+f.close()
