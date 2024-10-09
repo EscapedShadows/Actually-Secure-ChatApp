@@ -2,8 +2,26 @@ from flask import Flask, request, jsonify
 import time
 import json
 from datetime import datetime
+import socket
 
 app = Flask(__name__)
+
+port = 5000
+
+def get_server_info():
+    global port
+    hostname = socket.gethostname()
+    ip_address = socket.gethostbyname(hostname)
+    auth_code = "PLACEHOLDER_FOR_AUTH_CODE"
+
+    print("="*30)
+    print(" Server Information ".center(30, "="))
+    print(f"IP Address: {ip_address}")
+    print(f"Port: {port}")
+    print(f"Auth Code: {auth_code}")
+    print("="*30)
+
+get_server_info()
 
 def get_saved_messages(date):
     formatted_date = datetime.fromtimestamp(date)
@@ -61,4 +79,4 @@ def get_messages():
 
     return jsonify(messages)
 
-app.run(host="0.0.0.0", debug=True)
+app.run(host="0.0.0.0", debug=True, port=port)

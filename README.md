@@ -106,7 +106,7 @@ python3 setup.py --ip [servers_ip] --key [secret_key]
 **For Windows:**
 
 ```bash
-python setup.py --client [terminal/web]
+python setupClient.py --client [terminal/web]
 ```
 
 &nbsp;
@@ -114,7 +114,7 @@ python setup.py --client [terminal/web]
 **For Linux:**
 
 ```bash
-python3 setup.py --client [terminal/web]
+python3 setupClient.py --client [terminal/web]
 ```
 
 ### Depending on your operating system, there will be a `.bat` or `.sh` file generated, allowing you to quickly start the application.
@@ -126,7 +126,7 @@ python3 setup.py --client [terminal/web]
 # Notes
 
 - If you are having trouble with the setup, please refer to the [Troubleshooting Guide](https://actuallysecurechatapp.escapedshadows.com/troubleshooting).
-- Please be kind to me; I don’t have much time to develop this project, but I hope someone out there will actually appreciate it. :)
+- Please be kind to me; I dont have much time to develop this project, but I hope someone out there will actually appreciate it. :)
 
 # Development Plan
 
