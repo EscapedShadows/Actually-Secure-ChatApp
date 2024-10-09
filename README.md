@@ -134,4 +134,3 @@ python3 setup.py --client [terminal/web]
 - [ ] Error handling :D
 
 ### **A Project made with ❤️ by [EscapedShadows](https://escapedshadows.com)**
-:red_heart:
