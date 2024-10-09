@@ -17,6 +17,8 @@ Actually Secure ChatApp is a secure chat application built with Python and Flask
 
 # Setup Instructions
 
+### **INDEV MANY PLACEHOLDER FILES ARE STILL THERE. NOT FUNCTIONAL YET**
+
 **Skip to Client Instructions if you do not want to set up your own server and already have one / received a key.**
 
 &nbsp;
