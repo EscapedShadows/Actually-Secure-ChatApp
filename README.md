@@ -25,9 +25,9 @@ Actually Secure ChatApp is a secure chat application built with Python and Flask
 
 ### You can install the required packages using pip:
 
-+++bash
+```bash
 pip install flask cryptography
-+++
+```
 
 ## Step 2: Download the Code
 
@@ -39,17 +39,17 @@ pip install flask cryptography
 
 **For Windows:**
 
-+++bash
+```bash
 python keyGenerator.py
-+++
+```
 
 &nbsp;
 
 **For Linux:**
 
-+++bash
+```bash
 python3 keyGenerator.py
-+++
+```
 
 ### This will create a `secret.key` file containing your generated secret key.
 
@@ -79,17 +79,17 @@ python3 keyGenerator.py
 
 **For Windows:**
 
-+++bash
+```bash
 python setup.py --ip [servers_ip] --key [secret_key]
-+++
+```
 
 &nbsp;
 
 **For Linux:**
 
-+++bash
+```bash
 python3 setup.py --ip [servers_ip] --key [secret_key]
-+++
+```
 
 ## Step 2: Decide on a Client
 
@@ -103,17 +103,17 @@ python3 setup.py --ip [servers_ip] --key [secret_key]
 
 **For Windows:**
 
-+++bash
+```bash
 python setup.py --client [terminal/web]
-+++
+```
 
 &nbsp;
 
 **For Linux:**
 
-+++bash
+```bash
 python3 setup.py --client [terminal/web]
-+++
+```
 
 ### Depending on your operating system, there will be a `.bat` or `.sh` file generated, allowing you to quickly start the application.
 
