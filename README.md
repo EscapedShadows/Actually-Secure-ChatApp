@@ -1,4 +1,4 @@
-# Actually Secure ChatApp
+# Actually Secure ChatApp V1.2.0
 ### A Project by [EscapedShadows](https://actuallysecurechatapp.escapedshadows.com)
 
 ## Overview
@@ -73,27 +73,9 @@ python3 keyGenerator.py
 
 # Client Instructions
 
-## Step 1: Get the Client
+## Step 1: Decide on a Client and Download
 
 ### Get the latest `client.zip` release from the [GitHub repository](https://github.com/EscapedShadows/Actually-Secure-ChatApp/releases). Extract the ZIP file and navigate to the folder using your terminal or command prompt.
-
-### To set up your client, simply run:
-
-**For Windows:**
-
-```bash
-python setup.py --ip [servers_ip] --key [secret_key]
-```
-
-&nbsp;
-
-**For Linux:**
-
-```bash
-python3 setup.py --ip [servers_ip] --key [secret_key]
-```
-
-## Step 2: Decide on a Client
 
 ### There are two clients available:
 - Terminal
@@ -117,7 +99,25 @@ python setupClient.py --client [terminal/web]
 python3 setupClient.py --client [terminal/web]
 ```
 
-### Depending on your operating system, there will be a `.bat` or `.sh` file generated, allowing you to quickly start the application.
+## Step 2: Set Up the Client
+
+### The `remove` argument instructs the script to delete itself after execution. The `path` argument adds the ChatApp to your system's PATH. The `menu` argument adds the ChatApp to the Start menu. The `executable` option turns the script into an `.exe` file (sorry Linux users, you'll have to wait a bit).
+
+### To set up your client, simply run:
+
+**For Windows:**
+
+```bash
+python setup.py --ip [servers_ip] --key [secret_key] --remove [True/False] --path [True/False] --menu [True/False] --executable [True/False]
+```
+
+&nbsp;
+
+**For Linux:**
+
+```bash
+python3 setup.py --ip [servers_ip] --key [secret_key] --remove [True/False] --path [True/False] --menu [True/False] --executable [True/False]
+```
 
 ## Step 3: Finished!
 
@@ -130,7 +130,6 @@ python3 setupClient.py --client [terminal/web]
 
 # Development Plan
 
-- [ ] Deleting Messages
 - [ ] Sending Attachments (very limited size for now)
 - [ ] Adding some sort of authentication system for the server so that only trusted clients can connect
 - [ ] Error handling :D

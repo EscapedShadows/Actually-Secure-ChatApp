@@ -12,13 +12,11 @@ def get_server_info():
     global port
     hostname = socket.gethostname()
     ip_address = socket.gethostbyname(hostname)
-    auth_code = "PLACEHOLDER_FOR_AUTH_CODE"
 
     print("="*30)
     print(" Server Information ".center(30, "="))
     print(f"IP Address: {ip_address}")
     print(f"Port: {port}")
-    print(f"Auth Code: {auth_code}")
     print("="*30)
 
 get_server_info()
